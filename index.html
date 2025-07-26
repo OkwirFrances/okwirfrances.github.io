@@ -1,197 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>EduSense – Gesture Control for Slides</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/footer.js"></script>
-  <style>
-    .menu-index{color:#fff !important;opacity:1 !important;font-weight:700 !important;}
-    @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSense</title>
 </head>
-
 <body>
-  <div class="menu-container"></div>
-  <div class="content-container">
+  <header>
+    <nav>
+      <!-- Menu content from menu.html would be included here -->
+    </nav>
+  </header>
 
-    <!--Start Header-->
-    <div class="banner"
-    
-         style="background:url('img/edusense.jpg') center/cover no-repeat;
-            height:250px;">
-    </div>
-    <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img src="img/edusense-logo-white.png" alt="EduSense" width="120" style="margin:.5rem 0 1rem;">
-            <h2 class="add-top-margin-small">
-              Wave goodbye to clickers.<br>
-              <span style="color:#f093fb;">Control slides with gestures.</span>
-            </h2>
-            <p class="text" style="max-width:550px;">
-              EduSense turns your phone into an AI-powered remote. Advance, rewind, or point—no cables, no dongles, no limits.
-            </p>
-            <div class="control-group add-top-margin">
-              <a class="custom-button custom-button-primary pulse-primary" href="#download">Download Free</a>
-              <a class="custom-button" href="#demo">Watch 30-sec Demo</a>
-            </div>
-            <p class="text text-small add-top-margin" style="opacity:.8;">
-              Trusted by 5 000+ students &bull; CMU spin-off
-            </p>
-          </div>
-        </div>
+  <main>
+    <section>
+      <div>
+        <h1>Wave goodbye to clickers.</h1>
+        <h2>Control slides with gestures.</h2>
+        <p>EduSense turns your phone into an AI-powered remote. Advance, rewind, or point—no cables, no dongles, no limits.</p>
+        <button>Download Free</button>
+        <a href="https://youtu.be/NqOs-AQkacI?si=hpzzKALl1OEmbvy7">Watch 30-sec Demo</a>
+        <p>Trusted by 5 000+ students • CMU spin-off</p>
       </div>
-    </div>
-    <!--End Header-->
+    </section>
 
-    <!--Start Intro-->
-    <div class="content">
-      <div class="content-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <img class="image" src="img/edusense-mockup-phone.png" alt="EduSense in action" style="max-width:200px;margin:0 auto;">
-          </div>
-          <div class="flex-item flex-column">
-            <h2>EduSense</h2>
-            <p class="text text-large">
-              The AI-powered gesture remote for PowerPoint, Google Slides & Keynote.<br>
-              <strong>Free • No ads • No dongles.</strong>
-            </p>
-            <div class="control-group add-top-margin-small">
-              <span class="badge-text">5 000+ Students</span>
-              <span class="badge-text">4.9★ on Play Store</span>
-              <!-- <span class="badge-text">CMU Spin-off</span> -->
-            </div>
-            <ul style="margin-top:1rem;">
-              <li><a href="#features">What it does</a></li>
-              <li><a href="#demo">See it live</a></li>
-              <li><a href="#download">Get the app</a></li>
-              <li><a href="#faq">Questions?</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text text-center add-top-margin">
-              “Finally, no more hunting for the clicker.”<br>
-              <a class="custom-button custom-button-primary stretch-on-mobile" href="#download" style="margin-top:0.5rem;">
-                Download EduSense Free
-              </a>
-            </p>
-          </div>
-        </div>
-        <!--End Intro-->
-
-        <!--Start Overview-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="overview">Overview</h2>
-            <hr>
-            <p class="text">
-              EduSense is an Android/iOS app that turns your phone into an AI-powered slide remote. Using computer-vision
-              gesture recognition, you can advance, go back, or point to slides with simple hand movements—no extra hardware
-              required.
-            </p>
-          </div>
-        </div>
-        <!--End Overview-->
-
-        <!--Start Features-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="features">Key Features</h2>
-            <hr>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/play.png"><span>Fist-pose Next Slide</span></button>
-              <button class="custom-button-flat"><img src="img/back.png"><span>Open-palm Previous Slide</span></button>
-              <button class="custom-button-flat"><img src="img/hand-pointer.png"><span>Pointer Mode</span></button>
-              <button class="custom-button-flat"><img src="img/setting.png"><span>Custom Gestures</span></button>
-            </div>
-            <p class="text">
-              Works with PowerPoint, Google Slides, Keynote and any web deck. Connects via Wi-Fi; zero-config on the same LAN.
-            </p>
-          </div>
-        </div>
-        <!--End Features-->
-
-        <!--Start Demo-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="demo">Live Demo</h2>
-            <hr>
-            <iframe class="iframe-in-body" src="https://www.youtube.com/embed/XXXXXXXXX" allowfullscreen></iframe>
-          </div>
-        </div>
-        <!--End Demo-->
-
-        <!--Start Download-->
-        <div class="flex-row-space-between add-top-margin">
-          <div class="flex-item flex-column">
-            <p class="text badge-text">Get EduSense Now</p>
-          </div>
-          <div class="flex-item flex-column">
-            <div class="control-group">
-              <a class="custom-image-button" href="https://play.google.com/store/apps/details?id=com.edusense.app" target="_blank">
-                <img src="img/google-play-badge.png" width="170">
-              </a>
-              <a class="custom-image-button" href="https://apps.apple.com/us/app/edusense/idXXXXXXXXX" target="_blank">
-                <img src="img/app-store-badge.png" width="170">
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--End Download-->
-
-        <!--Start FAQ-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="faq">FAQ</h2>
-            <hr>
-            <details class="text">
-              <summary>Does EduSense work offline?</summary>
-              <p>Yes. Gestures are processed on-device; no internet required after installation.</p>
-            </details>
-            <details class="text">
-              <summary>Which presentation apps are supported?</summary>
-              <p>Any desktop app that accepts keyboard shortcuts (PowerPoint, Keynote, Google Slides in browser, etc.).</p>
-            </details>
-          </div>
-        </div>
-        <!--End FAQ-->
-
-        <!--Start Team-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="team">Team & Credits</h2>
-            <hr>
-            <p class="text">
-              EduSense is a Makerere University spin-off created by the College of computing and information science.<br>
-              Core team: rancis, Joash, Donatah, Kennedy, Cissy – <a href="mailto:hello@edusense.app">hello@edusense.app</a>
-            </p>
-            <p class="text text-small text-italic add-top-margin-large">
-              Built with ❤️ by the EduSense team at COCIS.<br>
-              Logo & iconography by <span class="highlight-text">Donatah</span>.
-            </p>
-          </div>
-        </div>
-        <!--End Team-->
-
+    <section>
+      <div>
+        <h2>EduSense</h2>
+        <p>The AI-powered gesture remote for PowerPoint, Google Slides & Keynote.</p>
+        <p>Free • No ads • No dongles.</p>
+        <p>5 000+ Students</p>
+        <!-- Removed Play Store rating since app is not on Play Store -->
+        <nav>
+          <a href="#overview">What it does</a>
+          <a href="#demo">See it live</a>
+          <a href="#download">Get the app</a>
+          <a href="#faq">Questions?</a>
+        </nav>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-container"></div>
-  </div>
+    <section id="overview">
+      <h2>Overview</h2>
+      <p>EduSense is an Android/iOS app that turns your phone into an AI-powered slide remote. Using computer-vision gesture recognition, you can advance, go back, or point to slides with simple hand movements—no extra hardware required.</p>
+    </section>
+
+    <section id="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Fist-pose Next Slide</li>
+        <li>Open-palm Previous Slide</li>
+        <li>Pointer Mode</li>
+        <li>Custom Gestures</li>
+      </ul>
+      <p>Works with PowerPoint, Google Slides, Keynote and any web deck. Connects via Wi-Fi; zero-config on the same LAN.</p>
+    </section>
+
+    <section id="demo">
+      <h2>Live Demo</h2>
+      <iframe src="https://www.youtube.com/embed/NqOs-AQkacI" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="download">
+      <h2>Get EduSense Now</h2>
+      <div>
+        <a href="#">Download EduSense Free</a>
+        <!-- Removed Google Play Store button -->
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div>
+        <h3>Does EduSense work offline?</h3>
+        <p>Yes. Gestures are processed on-device; no internet required after installation.</p>
+        <h3>Which presentation apps are supported?</h3>
+        <p>Any desktop app that accepts keyboard shortcuts (PowerPoint, Keynote, Google Slides in browser, etc.).</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <h2>Team & Credits</h2>
+      <p>EduSense is a Makerere University spin-off created by the College of computing and information science.</p>
+      <p>Core team: Francis, Joash, Donatah, Kennedy, Cissy – <a href="mailto:hello@edusense.app">hello@edusense.app</a></p>
+      <p>Built with ❤️ by the EduSense team at COCIS.</p>
+      <p>Logo & iconography by Donatah.</p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer content from footer.html would be included here -->
+  </footer>
 </body>
-
 </html>
